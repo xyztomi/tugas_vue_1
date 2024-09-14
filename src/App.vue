@@ -1,5 +1,6 @@
 <script setup>
   import Counter from './components/Counter.vue'
+  import BoxColorChanger from './components/BoxColorChanger.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@
     <div class="content">
       <h1>Tugas Vue</h1>
       <Counter />
+      <BoxColorChanger/>
     </div>
   </div>
 </template>
