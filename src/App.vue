@@ -1,6 +1,7 @@
 <script setup>
   import Counter from './components/Counter.vue'
   import BoxColorChanger from './components/BoxColorChanger.vue';
+  import ImageCarousel from './components/ImageCarousel.vue';
 </script>
 
 <template>
@@ -10,6 +11,7 @@
       <h1>Tugas Vue</h1>
       <Counter />
       <BoxColorChanger/>
+      <ImageCarousel/>
     </div>
   </div>
 </template>
