@@ -1,0 +1,50 @@
+/* Global styling for the body with the colorful animated background */
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Div that will fill the body with a vibrant animated background */
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00, #ff0000, #00ff00, #0000ff);
+  background-size: 600% 600%;
+  animation: lsdEffect 3s linear infinite; /* Faster animation (3s) */
+}
+
+/* Keyframes for vibrant color shifts and psychedelic effects */
+@keyframes lsdEffect {
+  0% {
+    background-position: 0% 50%;
+    transform: scale(1) rotate(0deg);
+    filter: hue-rotate(0deg) blur(0px);
+  }
+  25% {
+    background-position: 50% 100%;
+    transform: scale(1.1) rotate(45deg);
+    filter: hue-rotate(90deg) blur(2px);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: scale(1.2) rotate(90deg);
+    filter: hue-rotate(180deg) blur(4px);
+  }
+  75% {
+    background-position: 50% 0%;
+    transform: scale(1.1) rotate(135deg);
+    filter: hue-rotate(270deg) blur(2px);
+  }
+  100% {
+    background-position: 0% 50%;
+    transform: scale(1) rotate(180deg);
+    filter: hue-rotate(360deg) blur(0px);
+  }
+}
